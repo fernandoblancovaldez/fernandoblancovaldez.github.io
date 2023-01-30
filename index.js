@@ -1,7 +1,11 @@
-const url = "https://randomuser.me/api/";
+const url = "https://randomuser.me/apis/";
 
 async function ajax(props) {
+  const d = document;
   let { url, cbSuccess } = props;
+
+  d.querySelectorAll(".loader").style.display = "block"; /* 
+  d.getElementsByClassName("loader").style.display = "block"; */
 
   await fetch(url)
     .then((res) => (res.ok ? res.json() : Promise.reject(res)))
@@ -27,7 +31,6 @@ await ajax({
 });
 
 /* fetch("https://randomuser.me/api/")
-  .then((response) => response.json())
-  .then((json) => {
-    console.log(json);
-  }); */
+  .then((res) => res.json())
+  .then((json) => console.log(json);
+  ); */

@@ -15,6 +15,11 @@ html {
   box-sizing: inherit;
 }
 
+.loader {
+  display: none;
+  margin: 0.5rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -71,7 +76,7 @@ header {
 }
 
 .card {
-  color: var(--main-color);
+  color: white;
   background-color: var(--alternative-color);
   margin: 5vh auto;
   height: 75vh;
