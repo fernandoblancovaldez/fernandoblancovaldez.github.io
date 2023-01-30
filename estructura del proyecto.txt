@@ -1,0 +1,14 @@
+<heather>		      NAV				  |
+	       Imail-Ibirth-Ilocate-Iphone	</heather>| al clickear en cada icon q se modfique la info mostrada en detalles
+
+<main>			   DIV(card)			   	  |
+<h1>			     NOMBRE			     </h1>|
+<h2>			   PROFESION			     </h2>|
+<section>		   DIV(foto)				  | al clickear en la foto q se reemplace los h3 y p dentro d detalles por un solo p con la BIO (se carga directo al iniciar la pagina)
+			 DIV(detalles)		 		  |
+<h3>			     CAMPO			     </h3>|
+<p>			     INFO	     </p></section></main>|
+
+<footer>	     SITIO DESARROLLADO POR			  |
+		  FERNANDO MARTIN BANCO VALDEZ			  |
+		  DESARROLLADOR WEB FRONT END		 </footer>|
