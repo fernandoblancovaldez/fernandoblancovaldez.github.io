@@ -165,3 +165,44 @@ footer {
     width: 2.5rem;
   }
 }
+
+@media only screen and (max-height: 384px) and (orientation: landscape) {
+  h1 {
+    font-size: 1.25rem;
+    margin: 0.15rem auto;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    margin: 0.15rem auto;
+  }
+
+  h3 {
+    font-size: 0.75rem;
+    margin: 0.15rem auto;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .profile-pic img {
+    border: 0.05rem;
+    max-width: 100px;
+    margin: 0.05rem auto;
+  }
+
+  .nav-buttons,
+  .card {
+    width: 95vw;
+  }
+
+  .nav-buttons {
+    font-size: 1rem;
+  }
+
+  .nav-buttons > * {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+}
