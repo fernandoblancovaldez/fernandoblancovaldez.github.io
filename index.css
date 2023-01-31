@@ -116,8 +116,9 @@ header {
   margin: 0 auto;
 }
 
+section,
 .info {
-  transition: all 0.3s ease-out;
+  max-width: 100%;
 }
 
 footer {

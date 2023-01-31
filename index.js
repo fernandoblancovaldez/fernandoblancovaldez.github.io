@@ -76,8 +76,8 @@ await ajax({
       }
       if (e.target.matches("#calendar") || e.target.matches("#calendar *")) {
         d.querySelector(".info").innerHTML = `
-            <p>mi fecha de nacimiento es</p>
-            <h2>${person.registered.date}</h2>
+            <p>tengo</p>
+            <h2>${person.dob.age} años</h2>
             `;
       }
       if (e.target.matches("#location") || e.target.matches("#location *")) {
