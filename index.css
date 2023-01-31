@@ -58,6 +58,7 @@ header {
   justify-content: center;
   text-align: center;
   margin: 2.5vh auto;
+  transition: all 0.3s ease 0s;
 }
 
 .nav-buttons {
@@ -69,6 +70,7 @@ header {
   flex-wrap: wrap;
   font-size: 1.5em;
   justify-content: space-around;
+  transition: all 0.3s ease 0s;
 }
 
 .nav-buttons > * {
@@ -105,7 +107,7 @@ header {
   background-color: var(--alternative-color);
   margin: 5vh auto;
   height: 75vh;
-  max-width: 80vw;
+  width: 80vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -130,4 +132,36 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .nav-buttons,
+  .card {
+    width: 95vw;
+  }
+
+  .nav-buttons {
+    font-size: 1.25rem;
+  }
+
+  .nav-buttons > * {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
