@@ -16,13 +16,15 @@ html {
 }
 
 .loader {
-  display: none;
   margin: 0.5rem;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  margin: 0.5rem auto;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
 }
 
 h1 {
@@ -30,9 +32,13 @@ h1 {
   font-weight: 900;
 }
 
-h2 {
+h3 {
   margin: 0.5rem;
   font-weight: 300;
+}
+
+p {
+  margin: 0 0.5rem;
 }
 
 body {
@@ -56,27 +62,46 @@ header {
 
 .nav-buttons {
   width: 80vw;
-  color: white;
+  color: #ffffff;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   font-size: 1.5em;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .nav-buttons > * {
+  height: 3rem;
+  width: 3rem;
+  background-color: #ffffff;
+  color: var(--main-color);
+  border-radius: 50%;
+  margin: 0.05rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
-  margin: auto 1.5rem;
-  transition: all 0.3s ease-out;
+  outline: none;
 }
 
 .nav-buttons > *:hover {
-  color: var(--second-color);
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.nav-buttons > *:active {
+  transform: translateY(-1px);
 }
 
 .card {
-  color: white;
+  transition: all 0.3s ease 0s;
+  color: var(--main-color);
   background-color: var(--alternative-color);
   margin: 5vh auto;
   height: 75vh;
@@ -84,10 +109,15 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .card > * {
   margin: 0 auto;
+}
+
+.info {
+  transition: all 0.3s ease-out;
 }
 
 footer {
