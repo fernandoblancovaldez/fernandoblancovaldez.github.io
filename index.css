@@ -13,6 +13,7 @@ html {
 *:after,
 *:before {
   box-sizing: inherit;
+  transition: all 0.3s ease 0s;
 }
 
 .loader {
@@ -28,17 +29,30 @@ img {
 }
 
 h1 {
+  font-size: 1.75rem;
   margin: 0.5rem;
   font-weight: 900;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1rem;
 }
 
 h3 {
   margin: 0.5rem;
   font-weight: 300;
+  font-size: 1rem;
 }
 
 p {
+  font-size: 0.85rem;
   margin: 0 0.5rem;
+}
+
+ul {
+  margin: 0.5rem auto;
 }
 
 body {
@@ -115,10 +129,8 @@ main {
   transition: all 0.3s ease 0s;
   color: var(--main-color);
   background-color: var(--alternative-color);
-  /*  */
   height: 75vh;
   width: 80vw;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +140,15 @@ main {
 .exp,
 .skills > * {
   margin: 0 auto;
+}
+
+.profile {
+  text-align: center;
+}
+
+.exp > *,
+.skills > * {
+  margin: auto 3rem;
 }
 
 .info {
@@ -151,9 +172,9 @@ footer {
     font-size: 1.75rem;
   }
 
-  h2 {
+  /* h2 {
     font-size: 1.25rem;
-  }
+  } */
 
   h3 {
     font-size: 1rem;
@@ -168,6 +189,11 @@ footer {
   .exp,
   .skills {
     width: 95vw;
+  }
+
+  .exp > *,
+  .skills > * {
+    margin: auto 0.25rem;
   }
 
   .nav-buttons {
@@ -186,10 +212,10 @@ footer {
     margin: 0.15rem auto;
   }
 
-  h2 {
+  /* h2 {
     font-size: 1.15rem;
     margin: 0.15rem auto;
-  }
+  } */
 
   h3 {
     font-size: 0.75rem;

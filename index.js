@@ -59,10 +59,7 @@ await ajax({
             <h2>${person.email}</h2>
             `;
       }
-      if (
-        e.target.matches(".profile-pic") ||
-        e.target.matches(".profile-pic *")
-      ) {
+      if (e.target.matches(".profile-pic *")) {
         d.querySelector(".info").innerHTML = ` <p>
             <b>Profesional independiente, proactivo y autodidacta</b> que se desenvuelve en el área de desarrollo web.<br />
             <br />
