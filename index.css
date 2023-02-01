@@ -46,30 +46,25 @@ body {
   overflow-x: hidden;
 }
 
-body > * {
-  border-radius: 1rem;
-}
-
 header {
-  height: 15vh;
-  background-color: var(--main-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 2.5vh auto;
-  transition: all 0.3s ease 0s;
+  position: fixed;
+  background-color: #ffffff;
 }
 
 .nav-buttons {
-  width: 80vw;
   color: #ffffff;
+  background-color: var(--main-color);
+  width: 80vw;
+  height: 15vh;
   padding: 0;
+  border-radius: 1rem;
+  text-align: center;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   font-size: 1.5em;
   justify-content: space-around;
+  align-items: center;
   transition: all 0.3s ease 0s;
 }
 
@@ -101,11 +96,24 @@ header {
   transform: translateY(-1px);
 }
 
-.card {
+main {
+  margin: 22.5vh auto 5vh;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "b";
+  row-gap: 5vh;
+}
+
+.profile,
+.exp,
+.skills {
+  border-radius: 1rem;
   transition: all 0.3s ease 0s;
   color: var(--main-color);
   background-color: var(--alternative-color);
-  margin: 5vh auto;
+  /*  */
   height: 75vh;
   width: 80vw;
   text-align: center;
@@ -114,16 +122,18 @@ header {
   justify-content: center;
 }
 
-.card > * {
+.profile,
+.exp,
+.skills > * {
   margin: 0 auto;
 }
 
-section,
 .info {
   max-width: 100%;
 }
 
 footer {
+  border-radius: 1rem;
   height: 50vh;
   margin: 2.5vh auto;
   background-color: var(--main-color);
@@ -152,7 +162,9 @@ footer {
   }
 
   .nav-buttons,
-  .card {
+  .profile,
+  .exp,
+  .skills {
     width: 95vw;
   }
 
@@ -193,7 +205,9 @@ footer {
   }
 
   .nav-buttons,
-  .card {
+  .profile,
+  .exp,
+  .skills {
     width: 95vw;
   }
 

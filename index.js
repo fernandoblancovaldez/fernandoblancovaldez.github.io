@@ -1,6 +1,6 @@
 const url = "https://randomuser.me/api/";
 const d = document,
-  $main = d.querySelector("main");
+  $profile = d.querySelector(".profile");
 
 async function ajax(props) {
   let { url, cbSuccess } = props;
@@ -13,7 +13,7 @@ async function ajax(props) {
     .then((json) => cbSuccess(json))
     .catch((err) => {
       let message = err.statusText || `Ocurrió un error al acceder a la API`;
-      $main.innerHTML = `
+      $profile.innerHTML = `
       <div >
         <p>Error ${err.status}: ${message}</p>
       </div>      
@@ -28,7 +28,7 @@ await ajax({
     const person = json.results[0];
     console.log(person);
 
-    d.querySelector(".card").insertAdjacentHTML(
+    d.querySelector(".profile").insertAdjacentHTML(
       "afterbegin",
       `<div><h1>${person.name.first} ${person.name.last}</h1><h3>Front end Web Developer</h3></div>`
     );
